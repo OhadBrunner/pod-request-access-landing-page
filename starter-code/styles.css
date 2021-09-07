@@ -1,0 +1,260 @@
+body {
+  background-color: #121725;
+  font-family: 'Chivo', sans-serif;
+}
+
+.logo-img {
+  position: relative;
+  left: 16%;
+  width: 120px;
+}
+
+.dots-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+div.main-container {
+  width: 85%;
+  height: 640px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Text Container */
+div.text-container {
+  background-color: #121725;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70%;
+  z-index: 100;
+  width: 54%;
+}
+
+div.text-container h1 {
+  color: #54E6AF;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin: 10% auto 3% 3%;
+}
+
+.text-container p {
+  color: #C2CBE5;
+  margin: 0 35% 3% 3%;
+}
+
+.white-colored {
+  color: #fff;
+}
+
+.email-input {
+  position: relative;
+  background-color: #2C344B;
+  margin: 5% 38% 2% 3%;
+  padding: 3% 0 3% 3%;
+  border-radius: 25px;
+}
+
+.email-input input {
+  background: none;
+  border: none;
+  font-family: 'Chivo', sans-serif;
+  color: #fff;
+}
+
+.email-input input:hover, .email-input input:active {
+  border: none;
+}
+
+.email-input button {
+  background-color: #54E6AF;
+  border: none;
+  position: absolute;
+  color: #121725;
+  font-family: 'Chivo', sans-serif;
+  font-weight: bold;
+  height: 90%;
+  width: 40%;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 25px;
+}
+
+.email-input button:hover, email-input button:active {
+  cursor: pointer;
+  background-color: #B7E778;
+}
+
+.answer {
+  margin-left: 6%;
+  background: none;
+  border: none;
+  color: red;
+  width: 30%;
+}
+
+.text-container .images {
+  margin: 7% 0 0 3%;
+}
+
+.text-container .images img {
+  margin-right: 5%;
+}
+
+/* Image Container */
+div.image-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* Moblie State */
+@media only screen and (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #121725;
+    font-family: 'Chivo', sans-serif;
+    position: relative;
+  }
+
+  .logo-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10% auto 10% auto;
+  }
+
+  .dots-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  div.main-container {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    position: static;
+    right: auto;
+    top: auto;
+    transform: none;
+  }
+
+  /* Text Container */
+  div.text-container {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    background: none;
+    margin: 0 auto 18% auto;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  div.text-container h1 {
+    color: #54E6AF;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: auto;
+    order: 1;
+    padding: 0 10%;
+  }
+
+  .text-container p {
+    color: #C2CBE5;
+    margin: auto;
+    order: 2;
+    padding: 0 17%;
+  }
+
+  .white-colored {
+    color: #fff;
+  }
+
+  .email-input {
+    position: relative;
+    background-color: #2C344B;
+    margin: auto;
+    padding: auto;
+    border-radius: 25px;
+    order: 4;
+    width: 90%;
+  }
+
+  .email-input input {
+    background: none;
+    border: none;
+    font-family: 'Chivo', sans-serif;
+    color: #fff;
+  }
+
+  .email-input input:hover, .email-input input:active {
+    border: none;
+  }
+
+  .email-input button {
+    background-color: #54E6AF;
+    border: none;
+    position: fixed;
+    color: #121725;
+    height: 10%;
+    width: 90%;
+    border-radius: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+  }
+
+  .email-input button:hover, email-input button:active {
+    cursor: pointer;
+    background-color: #B7E778;
+  }
+
+  .answer {
+    margin-left: 6%;
+    background: none;
+    border: none;
+    color: red;
+    width: 30%;
+  }
+
+  .text-container .images {
+    margin: 0;
+    order: 3;
+  }
+
+  .text-container .images img {
+    width: 90px;
+    opacity: 0.5;
+  }
+
+  /* Image Container */
+  div.image-container {
+    position: absolute;
+    height: 100%;
+    opacity: 0.2;
+  }
+}
